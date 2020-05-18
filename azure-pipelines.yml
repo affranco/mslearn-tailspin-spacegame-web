@@ -34,7 +34,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: UseDotNet@2
-  build:
+  inputs:
     $(Build.DefinitionName): 'SpaceGame-Web-CI.'
     $(Build.BuildId): '115'
     $(Build.BuildNumber): '20200518.1.'
